@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SwiftyInvocation_Tests' do
+  pod 'SwiftyInvocation', :path => '../'
+  
+  
+end
