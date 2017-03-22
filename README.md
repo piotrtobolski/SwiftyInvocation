@@ -1,10 +1,12 @@
 # SwiftyInvocation
 
 [![CI Status](http://img.shields.io/travis/piotr-tobolski/SwiftyInvocation.svg?style=flat)](https://travis-ci.org/piotr-tobolski/SwiftyInvocation)
-[![Version](https://img.shields.io/cocoapods/v/SwiftyInvocation.svg?style=flat)](http://cocoapods.org/pods/SwiftyInvocation)
-[![License](https://img.shields.io/cocoapods/l/SwiftyInvocation.svg?style=flat)](http://cocoapods.org/pods/SwiftyInvocation)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftyInvocation.svg?style=flat)](http://cocoapods.org/pods/SwiftyInvocation)
-
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftyInvocation.svg)](https://cocoapods.org/pods/SwiftyInvocation)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Twitter](https://img.shields.io/badge/twitter-@piotrtobolski-blue.svg?style=flat)](http://twitter.com/piotrtobolski)
+[![Version](https://img.shields.io/cocoapods/v/SwiftyInvocation.svg?style=flat)](https://cocoapods.org/pods/SwiftyInvocation)
+[![License](https://img.shields.io/cocoapods/l/SwiftyInvocation.svg?style=flat)](https://cocoapods.org/pods/SwiftyInvocation)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftyInvocation.svg?style=flat)](https://cocoapods.org/pods/SwiftyInvocation)
 
 Have you ever dreamed about using NSInvocation from Swift code?
 You hate Apple for the NS_SWIFT_UNAVAILABLE macro?
@@ -48,6 +50,11 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "SwiftyInvocation"
+```
+
+It is also available through [Carthage](https://github.com/Carthage/Carthage):
+```ruby
+github "piotr-tobolski/SwiftyInvocation" ~> 0.1.0
 ```
 
 ## Author
