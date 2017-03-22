@@ -1,0 +1,6 @@
+framework module Pods_SwiftyInvocation_Tests {
+  umbrella header "Pods-SwiftyInvocation_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

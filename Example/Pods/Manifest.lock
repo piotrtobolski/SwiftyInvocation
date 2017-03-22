@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyInvocation (0.1.0)
+
+DEPENDENCIES:
+  - SwiftyInvocation (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyInvocation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftyInvocation: 5599ac160b220a316b44996b116407f39b9e5bcb
+
+PODFILE CHECKSUM: 9dc97e9fa41be41581724b9c82674762262509f3
+
+COCOAPODS: 1.2.0

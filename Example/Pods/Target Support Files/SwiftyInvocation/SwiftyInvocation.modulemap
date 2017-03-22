@@ -1,0 +1,6 @@
+framework module SwiftyInvocation {
+  umbrella header "SwiftyInvocation-umbrella.h"
+
+  export *
+  module * { export * }
+}

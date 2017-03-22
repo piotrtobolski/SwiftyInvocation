@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		538CA9350AB417D1C6F779DA /* Pods_SwiftyInvocation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FBEF1914439ED3F7120B56 /* Pods_SwiftyInvocation_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* SwiftyInvocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* SwiftyInvocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23FBEF1914439ED3F7120B56 /* Pods_SwiftyInvocation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyInvocation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C441473226BC9B44B71379 /* Pods-SwiftyInvocation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyInvocation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyInvocation_Tests/Pods-SwiftyInvocation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		32CF59ED2AD48EF1F521F5F9 /* Pods-SwiftyInvocation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyInvocation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyInvocation_Tests/Pods-SwiftyInvocation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3A7597E3C9FF342660C64F65 /* SwiftyInvocation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftyInvocation.podspec; path = ../SwiftyInvocation.podspec; sourceTree = "<group>"; };
+		3A7597E3C9FF342660C64F65 /* SwiftyInvocation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyInvocation.podspec; path = ../SwiftyInvocation.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftyInvocation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyInvocation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		B38DD268D9B15D6327CDA2AE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D0A40FF84BEADCEC99E945E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* SwiftyInvocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyInvocationTests.swift; sourceTree = "<group>"; };
+		B38DD268D9B15D6327CDA2AE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D0A40FF84BEADCEC99E945E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* SwiftyInvocationTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -131,10 +131,6 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
@@ -223,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* SwiftyInvocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 25C441473226BC9B44B71379 /* Pods-SwiftyInvocation_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -329,10 +326,12 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,10 +340,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32CF59ED2AD48EF1F521F5F9 /* Pods-SwiftyInvocation_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
